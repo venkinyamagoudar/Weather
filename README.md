@@ -3,7 +3,7 @@ A bignners app which uses API call get the current weather details of places lik
 
 ## Topics Implemented
 1. UIKit
-2. Establishing URLSession.
+2. Establishing URLSession and getting JSON data and decoding the JSON data.
 3. Unit Test Cses
 4. MVVM Pattern
 
