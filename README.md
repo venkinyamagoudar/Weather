@@ -12,5 +12,7 @@ A bignners app which uses API call get the current weather details of places lik
 2. Download the git clone.
 [https://github.com/venkinyamagoudar/Weather](https://github.com/venkinyamagoudar/Weather).
 3. Open "Weather.xcworkspace" in Xcode.
-4. Press CMD+R run the project.
-5. Press CMD+U to run all the test Cases.
+4. Now open chrome and sign up to this website 
+[https://www.weatherapi.com/](https://www.weatherapi.com/) and get the your API Id and paste that id in the VieModelFile (https://github.com/venkinyamagoudar/Weather/blob/main/Weather/ViewModel/ViewControllerViewModel.swift) and in ViewModelTestFile (https://github.com/venkinyamagoudar/Weather/blob/main/WeatherTests/Test%20View%20Model/TestViewControllerViewModel.swift).
+5. Press CMD+R run the project.
+6. Press CMD+U to run all the test Cases.
