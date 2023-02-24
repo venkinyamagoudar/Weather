@@ -144,7 +144,7 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="fUi-Dm-pPb" secondAttribute="bottom" constant="4" id="zp3-5Y-xPI"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <connections>
                                             <outlet property="day" destination="fUi-Dm-pPb" id="cA9-2t-UAp"/>
                                             <outlet property="maximumTemperature" destination="9TV-5l-M5I" id="hBc-Ie-n1m"/>
@@ -156,7 +156,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gxm-Yy-2gm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="34V-2v-1oO"/>
                             <constraint firstItem="QA0-Wr-cvS" firstAttribute="top" secondItem="EZf-i6-VQ5" secondAttribute="bottom" constant="25" id="3aE-Xp-RKd"/>

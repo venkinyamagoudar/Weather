@@ -14,9 +14,9 @@ class ViewControllerViewModel {
     var city = "Piscataway"
     var dailyPrediction: DailyPrediction?
     
-    /// Description: Used to get the URL
+    /// Description: Used to get the URL and write generated key instead of KEY in url
     /// - Parameter city: the city name from which weather is diplayed
-    /// - Returns: URL in the String type, Write the generated Key in the URL instead of KEY
+    /// - Returns: URL in the String type
     func setURL(city: String) -> String {
         let url = "https://api.weatherapi.com/v1/forecast.json?key=KEY&q=\(city)&days=10&aqi=no&alerts=no"
         return url

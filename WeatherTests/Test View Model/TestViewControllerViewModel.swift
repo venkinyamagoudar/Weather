@@ -36,6 +36,8 @@ final class TestViewControllerViewModel: XCTestCase {
     
     //MARK: Functions
     
+    
+    /// Description: Write the genrated Key instead of the KEY in URL.
     func test_setURL_ReturnString() {
         let city = "Edison"
         let url = obj.setURL(city: city)

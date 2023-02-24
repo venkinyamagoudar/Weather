@@ -27,19 +27,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        view.backgroundColor = .secondarySystemBackground
         
         loadData(city: viewModel.city)
-        
-        self.nextDayTableView.delegate = self
-        self.nextDayTableView.dataSource = self
-        self.nextDayTableView.backgroundColor = .secondarySystemBackground
-        
+        setUpTableView()
         rightBarButton = UIBarButtonItem(image: UIImage(systemName: "line.3.horizontal"),
                                          style: .done,
                                          target: self,
                                          action: #selector(rightBarButtonTapped))
         self.navigationItem.rightBarButtonItem = rightBarButton
+    }
+    
+    fileprivate func setUpTableView() {
+        nextDayTableView.delegate = self
+        nextDayTableView.dataSource = self
+        nextDayTableView.backgroundColor = .systemBackground
+        nextDayTableView.layer.cornerRadius = 20.0
+        nextDayTableView.layer.masksToBounds = true
     }
     
     private func loadData(city: String) {
@@ -135,6 +138,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
