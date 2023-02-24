@@ -40,7 +40,7 @@ final class TestViewControllerViewModel: XCTestCase {
         let city = "Edison"
         let url = obj.setURL(city: city)
         XCTAssertNotNil(url)
-        XCTAssertEqual(url, "https://api.weatherapi.com/v1/forecast.json?key={3bd11cf496d54126b8215228230401}&q=Edison&days=10&aqi=no&alerts=no")
+        XCTAssertEqual(url, "https://api.weatherapi.com/v1/forecast.json?key={KEY}&q=Edison&days=10&aqi=no&alerts=no")
     }
     
     func test_extractDatafromJsonFile_InvalidFileName() {
