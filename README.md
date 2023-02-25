@@ -1,5 +1,5 @@
 # Weather
-A bignners app which uses API call get the current weather details of places like , Paris, Edison, London, Chicago, Miami. The app also displays the next 10 days forecast of weather in the city.
+A bignners app which uses API call get the current weather details of places like Paris, Edison, London, Chicago, Miami. The app also displays the next 10 days forecast of weather in the city.
 
 ## Topics Implemented
 1. UIKit
